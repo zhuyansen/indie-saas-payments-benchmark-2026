@@ -1,0 +1,8 @@
+platform,merchant_of_record,new_sellers_since_2025,new_sellers_2024,new_sellers_2025,new_sellers_2026_to_oct15,software_share_pct,ai_product_share_pct,mainland_china_payouts,notes,source_url
+Stripe,No (Managed Payments +3.5%),102590,,,,9.0,7.0,Not supported,Largest overall base (mostly services/courses/local),https://jasonzhu.ai/en/blog/indie-payments-report-2026
+Gumroad,Yes (since 2025),28860,,,,11.0,8.0,PayPal only,Primarily ebooks/templates/courses,https://jasonzhu.ai/en/blog/indie-payments-report-2026
+Lemon Squeezy,Yes (sunsetting 2027-03-31),4637,,,,36.0,15.0,PayPal only,Announced payment sunset on March 31 2027,https://jasonzhu.ai/en/blog/choose-payment-platform-2026
+Polar,Yes,1664,55,305,1364,58.0,27.0,Not supported,Fastest absolute MoR growth among AI/OSS tools,https://jasonzhu.ai/en/blog/indie-payments-report-2026
+Dodo Payments,Yes,441,0,68,373,71.0,29.0,Supported (Bank/ID),Highest software (71%) and AI (29%) seller share,https://jasonzhu.ai/en/blog/indie-payments-report-2026
+Creem,Yes,249,1,38,211,65.0,24.0,Supported (Alipay/Bank),No international surcharge,https://jasonzhu.ai/en/blog/indie-payments-report-2026
+Paddle,Yes,84,,,,56.0,5.0,Supported,Classic checkout links only (JS overlay checkouts excluded),https://jasonzhu.ai/en/blog/choose-payment-platform-2026
