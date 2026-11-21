@@ -2,6 +2,8 @@
 
 [![CERN Zenodo DOI](https://img.shields.io/badge/Zenodo%20DOI-10.5281%2Fzenodo.24386243-blue)](https://doi.org/10.5281/zenodo.24386243)
 [![$20 Fee Benchmark DOI](https://img.shields.io/badge/Fee%20Benchmark%20DOI-10.5281%2Fzenodo.24387072-blue)](https://doi.org/10.5281/zenodo.24387072)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0000--2894--6285-A6CE39)](https://orcid.org/0009-0000-2894-6285)
+[![Hugging Face Dataset](https://img.shields.io/badge/HuggingFace-Dataset-FFD21E)](https://huggingface.co/datasets/jasonzhuyansen/indie-saas-payments-benchmark-2026)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 Open empirical benchmark by **Jason Zhu ([jasonzhu.ai](https://jasonzhu.ai/en))** comparing **Stripe, Polar, Dodo Payments, Creem, Waffo Pancake, Paddle, Lemon Squeezy, and Gumroad** across **~200,000 live checkout links** (2023–2026) and real-world **$20 AI SaaS subscription fees**.
@@ -10,6 +12,8 @@ Open empirical benchmark by **Jason Zhu ([jasonzhu.ai](https://jasonzhu.ai/en))*
 - **8-Platform Comparison Guide**: [How to Choose a Payment Platform as an Indie Developer (2026)](https://jasonzhu.ai/en/blog/choose-payment-platform-2026)
 - **Dual-Gateway $20 Fee Teardown**: [Waffo + Dodo Payments vs Stripe HK & Lemon Squeezy](https://jasonzhu.ai/en/blog/dodo-payments-waffo-ai-saas-fee-comparison)
 - **Interactive Selector Tool**: [Go-Global Payment Platform Picker](https://jasonzhu.ai/en/go-global/payments)
+- **Hugging Face Dataset Mirror**: [`jasonzhuyansen/indie-saas-payments-benchmark-2026`](https://huggingface.co/datasets/jasonzhuyansen/indie-saas-payments-benchmark-2026)
+- **Author ORCID**: [`0009-0000-2894-6285`](https://orcid.org/0009-0000-2894-6285)
 
 ---
 
