@@ -1,0 +1,44 @@
+# Machine-readable citation (https://citation-file-format.github.io). GitHub shows it as "Cite this repository".
+# No catalog sizes, versions or dates here on purpose: they change, and this file should stay true without edits.
+cff-version: 1.2.0
+message: >-
+  If you use these tables, please cite the working paper below; the data itself is archived on Zenodo
+  under the DOIs listed in this file.
+type: dataset
+title: "200,000 Indie Developer Checkout Links and Payment Platform Adoption Dataset (2023–2026)"
+authors:
+  - family-names: Zhu
+    given-names: Jason
+    alias: "祝彦森"
+    orcid: "https://orcid.org/0009-0000-2894-6285"
+    affiliation: "GoSailGlobal LLC"
+    website: "https://jasonzhu.ai/en"
+doi: 10.5281/zenodo.24386243
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24386243
+    description: "200,000 checkout links dataset"
+  - type: doi
+    value: 10.5281/zenodo.24387072
+    description: "$20 cross-border subscription fee benchmark (companion dataset)"
+repository: "https://github.com/zhuyansen/indie-saas-payments-benchmark-2026"
+url: "https://jasonzhu.ai/en/research/indie-saas-payments-mor-shift-2026"
+license: CC-BY-4.0
+keywords:
+  - merchant of record
+  - payment gateways
+  - indie SaaS
+  - Stripe
+preferred-citation:
+  type: report
+  title: "The Structural Shift from Payment Gateways to Merchant of Record Platforms Among Independent Software and AI Founders: Evidence from 200,000 Live Checkout Links and a $20 Cross-Border Subscription Fee Audit (2023–2026)"
+  authors:
+    - family-names: Zhu
+      given-names: Jason
+      orcid: "https://orcid.org/0009-0000-2894-6285"
+  doi: 10.5281/zenodo.24420871
+  year: 2026
+  month: 11
+  publisher:
+    name: Zenodo
+  url: "https://jasonzhu.ai/en/research/indie-saas-payments-mor-shift-2026"
