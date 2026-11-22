@@ -1,104 +1,50 @@
-# Stripe vs Polar vs Dodo Payments vs Creem vs Paddle (2026): Indie SaaS Payment & Merchant of Record Benchmark
+# New Sellers on Seven Checkout Platforms and Fees on a $20 Subscription (2026)
 
-[![CERN Zenodo DOI](https://img.shields.io/badge/Zenodo%20DOI-10.5281%2Fzenodo.24386243-blue)](https://doi.org/10.5281/zenodo.24386243)
-[![$20 Fee Benchmark DOI](https://img.shields.io/badge/Fee%20Benchmark%20DOI-10.5281%2Fzenodo.24387072-blue)](https://doi.org/10.5281/zenodo.24387072)
+[![DOI: seller counts](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.24386242-blue)](https://doi.org/10.5281/zenodo.24386242)
+[![DOI: $20 fees](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.24387071-blue)](https://doi.org/10.5281/zenodo.24387071)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0000--2894--6285-A6CE39)](https://orcid.org/0009-0000-2894-6285)
-[![Hugging Face Dataset](https://img.shields.io/badge/HuggingFace-Dataset-FFD21E)](https://huggingface.co/datasets/jasonzhuyansen/indie-saas-payments-benchmark-2026)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-Open empirical benchmark by **Jason Zhu ([jasonzhu.ai](https://jasonzhu.ai/en))** comparing **Stripe, Polar, Dodo Payments, Creem, Waffo Pancake, Paddle, Lemon Squeezy, and Gumroad** across **~200,000 live checkout links** (2023–2026) and real-world **$20 AI SaaS subscription fees**.
+A mirror of two summary tables that Jason Zhu ([jasonzhu.ai](https://jasonzhu.ai/en), ORCID [0009-0000-2894-6285](https://orcid.org/0009-0000-2894-6285)) archived on Zenodo. The Zenodo records are the reference; these DOIs always point to their newest version:
 
-- **Full Adoption Report**: [What 200,000 Checkout Links Say: The 2026 Indie Payments Report](https://jasonzhu.ai/en/blog/indie-payments-report-2026)
-- **8-Platform Comparison Guide**: [How to Choose a Payment Platform as an Indie Developer (2026)](https://jasonzhu.ai/en/blog/choose-payment-platform-2026)
-- **Dual-Gateway $20 Fee Teardown**: [Waffo + Dodo Payments vs Stripe HK & Lemon Squeezy](https://jasonzhu.ai/en/blog/dodo-payments-waffo-ai-saas-fee-comparison)
-- **Interactive Selector Tool**: [Go-Global Payment Platform Picker](https://jasonzhu.ai/en/go-global/payments)
-- **Hugging Face Dataset Mirror**: [`jasonzhuyansen/indie-saas-payments-benchmark-2026`](https://huggingface.co/datasets/jasonzhuyansen/indie-saas-payments-benchmark-2026)
-- **Author ORCID**: [`0009-0000-2894-6285`](https://orcid.org/0009-0000-2894-6285)
+- New sellers on seven checkout platforms, 2023 to 15 October 2026: [10.5281/zenodo.24386242](https://doi.org/10.5281/zenodo.24386242)
+- Fees taken from a $20 cross-border subscription, eight payment setups (November 2026): [10.5281/zenodo.24387071](https://doi.org/10.5281/zenodo.24387071)
 
----
+**Corrected on 22 November 2026.** The first versions of both tables (20–21 November 2026) did not match the reports they came from. The seller counts per platform were wrong (Polar was given 2,400 new sellers in 2026; the report says 1,364), there was a Waffo Pancake row with no data behind it, and the fee table put a total without a payout fee beside totals with one. The files here are the corrected ones.
 
-## Key Empirical Findings (Data through October 15, 2026)
+## Files
 
-1. **Rapid indie seller growth:** 21,000 new sellers in 2023 → 29,000 in 2024 → 56,000 in 2025 → **82,000 in 2026 (Jan–Oct 15)**.
-2. **Software & AI surge:** Software share among new sellers rose from **5% (2023)** to **20% (Sept 2026)**; AI products climbed from **2% to 12%**.
-3. **AI founders pick Merchant of Record (MoR) platforms over Stripe:** Since 2025, **29%** of new Dodo Payments sellers, **27%** of Polar sellers, and **24%** of Creem sellers ship AI products — versus **7%** on Stripe and **8%** on Gumroad.
-4. **Lemon Squeezy migration window:** Lemon Squeezy announced in November 2026 that it will stop processing payments on **March 31, 2027**, pushing SaaS founders toward Stripe Managed Payments, Polar, Dodo Payments, Creem, Paddle, or Waffo.
+- `data/platform-adoption-200k-2026.csv`: one row per platform (Stripe, Gumroad, Lemon Squeezy, Polar, Dodo Payments, Creem, Paddle): new sellers since 2025, the share selling software, the share selling AI products, and new sellers per year for Polar, Creem and Dodo Payments (the only per-year figures published).
+- `data/new-sellers-by-year.csv`: new sellers across the seven platforms in each year (21,000 in 2023, 29,000 in 2024, 56,000 in 2025, 82,000 in 2026 up to 15 October), rounded as published.
+- `data/mor-20usd-subscription-fees-2026.csv`: what one $20 monthly subscription paid with an international card costs under eight payment setups, itemized, with a column saying whether a payout fee is in the total.
 
----
+## Reading the tables
 
-## 1. 2026 Pricing, Merchant of Record Fees & $20 SaaS Net Take-Home
-
-Fees verified against official pricing pages (Oct–Nov 2026). Full machine-readable table in [`data/mor-20usd-subscription-fees-2026.csv`](data/mor-20usd-subscription-fees-2026.csv).
-
-| Platform | MoR (Global VAT/Sales Tax) | Published Base Fee | Extra Surcharges | Est. Taken on $20 Sub | Net Kept on $20 | Mainland China Payouts |
-|---|---|---|---|---|---|---|
-| **Dodo Payments** (Partner Rate) | Yes | `3.8%–3.9% + $0.40` | None (`$0` payout at `$1,000+`) | `$1.16–$1.18` | **`$18.82–$18.84`** | Yes (Bank / ID) |
-| **Waffo Pancake** | Yes | `3.9% + $0.50` | None (`1%` payout, `$10` min) | `$1.28` | **`$18.72`** | Yes (Alipay / Bank) |
-| **Creem** | Yes | `3.9% + $0.40` | None (`1%` or `$7` payout) | `$1.37` | **`$18.63`** | Yes (Alipay / Bank) |
-| **Paddle** | Yes | `5.0% + $0.50` | All-in | `$1.50` | **`$18.50`** | Yes |
-| **Dodo Payments** (Default Rate) | Yes | `4.0% + $0.40` | `+1.5%` intl, `+0.5%` sub | `$1.60` | **`$18.40`** | Yes (Bank / ID) |
-| **Stripe HK** (Billing+Tax+FX) | No (+3.5% Managed) | `3.4% + $0.30` | `+0.5%` intl, `+0.7%` Billing, `+2.5%` FX/Tax | `$1.79` | **`$18.21`** | Requires HK/US entity |
-| **Polar** (Post May 27, 2026) | Yes | `5.0% + $0.50` (or `3.4%–3.8%` plans) | `+1.5%` international | `$1.80` | **`$18.20`** | No |
-| **Lemon Squeezy** *(sunsetting Mar 2027)* | Yes | `5.0% + $0.50` | `+1.5%` non-US, `+0.5%` sub, `+1%` payout | `$2.08` | **`$17.92`** | PayPal only |
-| **Stripe US** (Base card only) | No (+3.5% Managed) | `2.9% + $0.30` | `+1.5%` intl, `+1%` FX | `$0.88` (US dom.) | `$19.12` (pre-tax) | Requires US entity |
-| **Gumroad** | Yes (since 2025) | `10% + $0.50` + `2.9% + $0.30` | `30%` on Discover | `$3.38+` | `~$16.62` | PayPal only |
-
----
-
-## 2. Empirical Adoption Across ~200,000 Checkout Links (2025–2026)
-
-Full CSV in [`data/platform-adoption-200k-2026.csv`](data/platform-adoption-200k-2026.csv). Methodology: DataForSEO link graph (Oct 14–15, 2026) tracking unique domains linking to platform checkout URLs, excluding shared multi-site spam/repost links (17,000 sites excluded).
-
-| Platform | New Sellers Since 2025 | Software Share | AI Product Share | 2024 → 2025 → 2026 (to Oct 15) |
-|---|---:|---:|---:|---|
-| **Stripe** | 102,590 | 9% | 7% | Largest total base (mostly services/local/general) |
-| **Gumroad** | 28,860 | 11% | 8% | Dominated by ebooks, templates & courses |
-| **Lemon Squeezy** | 4,637 | 36% | 15% | Sunsetting payments on March 31, 2027 |
-| **Polar** | 1,664 | 58% | 27% | `55` → `305` → `1,364` |
-| **Dodo Payments** | 441 | 71% | 29% | `0` → `68` → `373` |
-| **Creem** | 249 | 65% | 24% | `1` → `38` → `211` |
-| **Paddle** *(classic links)* | 84 | 56% | 5% | Primarily JS overlay checkout (under-represented in link graph) |
-
----
-
-## 3. Quick Decision Matrix by Founder Profile
-
-- **AI SaaS / indie tool founder wanting Merchant of Record (global VAT/GST handled):** **Polar** (GitHub-native, US/EU/HK entities), **Dodo Payments**, **Creem**, **Waffo Pancake**, or **Paddle**.
-- **Mainland China individual founder without an overseas entity:** **Dodo Payments**, **Creem**, or **Waffo Pancake** (all act as MoR and support mainland payouts; Stripe and Polar do not support mainland China payouts).
-- **US LLC or HK company optimizing for high-volume domestic US card rates:** **Stripe** (add Stripe Managed Payments at `+3.5%` if you want MoR tax compliance).
-- **Migrating off Lemon Squeezy before March 31, 2027:** Compare **Dodo Payments**, **Polar**, **Creem**, **Paddle**, and **Stripe Managed Payments** using the `$20` effective take-home table above.
-
----
-
-## Data Files
-
-- [`data/platform-adoption-200k-2026.csv`](data/platform-adoption-200k-2026.csv) — Platform-level seller counts, software/AI shares, and YoY trajectories (2024–2026).
-- [`data/mor-20usd-subscription-fees-2026.csv`](data/mor-20usd-subscription-fees-2026.csv) — Line-by-line `$20` international AI SaaS subscription fee breakdown.
+- A website that links to a platform's checkout page counts as a seller on that platform, dated by the day it first linked. Only sites that still linked in October 2026 are counted, so earlier years are undercounted. The link data comes from DataForSEO's link graph (queried through AIsa on 14–15 October 2026); DataForSEO's terms do not allow redistributing it, so only summary tables are published.
+- Shares are within each platform. AI products are 24–29% of new sellers on Dodo Payments, Polar and Creem and 7% on Stripe, but Stripe is so much larger that it has more AI sellers in absolute numbers: about 7,200, against 2,354 new sellers of any kind on the three platforms combined.
+- Six fee rows are from Liu Xiaopai's post of 15 November 2026 ([WeChat, in Chinese](https://mp.weixin.qq.com/s/uTtP5zv_exiHa52qSa07BA)); the Paddle and Polar rows are Jason Zhu's arithmetic from published rates. Waffo Pancake's $1.28 leaves out its 1% payout fee. Fees change, so check each platform's current pricing.
+- Write-ups: [What 200,000 Checkout Links Say](https://jasonzhu.ai/en/blog/indie-payments-report-2026) · [How to choose a payment platform](https://jasonzhu.ai/en/blog/choose-payment-platform-2026) · [the $20 fee breakdown](https://jasonzhu.ai/en/blog/dodo-payments-waffo-ai-saas-fee-comparison) · [working paper](https://doi.org/10.5281/zenodo.24420870)
 
 ## Citation
 
-If you use these tables in an article, documentation, or benchmark, please cite the CERN Zenodo archives:
-
 ```bibtex
-@dataset{zhu_2026_indie_payments_200k,
-  author       = {Zhu, Jason},
-  title        = {200,000 Indie Developer Checkout Links and Payment Platform Adoption Benchmark (2023-2026)},
-  year         = 2026,
-  publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.24386243},
-  url          = {https://jasonzhu.ai/en/blog/indie-payments-report-2026}
+@dataset{zhu_2026_new_sellers_checkout_platforms,
+  author    = {Zhu, Jason},
+  title     = {New Sellers on Seven Checkout Platforms, 2023 to 15 October 2026: Summary Tables},
+  year      = 2026,
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.24386242}
 }
 
-@dataset{zhu_2026_mor_20usd_fees,
-  author       = {Zhu, Jason},
-  title        = {$20 Cross-Border AI SaaS Subscription Fee Benchmark Across Payment Gateways and MoRs (2026)},
-  year         = 2026,
-  publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.24387072},
-  url          = {https://jasonzhu.ai/en/blog/choose-payment-platform-2026}
+@dataset{zhu_2026_fees_20usd_subscription,
+  author    = {Zhu, Jason},
+  title     = {Fees Taken from a \$20 Cross-Border Subscription, Itemized for Eight Payment Setups (November 2026)},
+  year      = 2026,
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.24387071}
 }
 ```
 
 ## License
 
-Data and documentation are released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Attribution: Jason Zhu ([jasonzhu.ai](https://jasonzhu.ai/en)).
+CC BY 4.0. When you use the fee rows from Liu Xiaopai's post, credit him and link it.
